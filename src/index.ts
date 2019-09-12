@@ -1,3 +1,8 @@
+/**
+ * @author GuangHui
+ * @description 入口
+ */
+
 import 'reflect-metadata'
 import { createConnection } from 'typeorm'
 import * as express from 'express'

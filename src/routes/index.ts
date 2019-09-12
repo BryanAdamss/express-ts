@@ -4,6 +4,7 @@ import user from './user'
 
 const routes = Router()
 
+// 挂载中间件
 routes.use('/auth', auth)
 routes.use('/user', user)
 

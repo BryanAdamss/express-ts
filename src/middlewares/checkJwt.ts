@@ -1,6 +1,6 @@
 /**
  * @author GuangHui
- * @description toekn 鉴权
+ * @description toekn 鉴权中间件
  */
 
 import { Request, Response, NextFunction } from 'express'

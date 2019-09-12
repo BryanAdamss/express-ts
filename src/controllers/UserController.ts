@@ -1,3 +1,8 @@
+/**
+ * @author GuangHui
+ * @description 用户控制器
+ */
+
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm'
 import { validate } from 'class-validator'

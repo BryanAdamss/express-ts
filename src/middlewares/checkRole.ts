@@ -1,6 +1,6 @@
 /**
  * @author GuangHui
- * @description 检查用户权限
+ * @description 检查用户角色中间件
  */
 
 import { Request, Response, NextFunction } from 'express'

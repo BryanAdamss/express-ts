@@ -1,3 +1,8 @@
+/**
+ * @author GuangHui
+ * @description 权限控制器
+ */
+
 import { Request, Response } from 'express'
 import * as jwt from 'jsonwebtoken'
 import { getRepository } from 'typeorm'
@@ -7,7 +12,12 @@ import { User } from '../entity/User'
 import config from '../config/config'
 
 class AuthController {
-  // 登录
+  /**
+   * 登录
+   *
+   * @static
+   * @memberof AuthController
+   */
   static login = async (req: Request, res: Response) => {
     // 检查username,password
     let { username, password } = req.body
@@ -42,6 +52,12 @@ class AuthController {
     res.send(token)
   }
 
+  /**
+   * 修改密码
+   *
+   * @static
+   * @memberof AuthController
+   */
   static changePassword = async (req: Request, res: Response) => {
     // 获取userId
     const id = res.locals.jwtPayload.userId

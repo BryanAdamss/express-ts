@@ -1,3 +1,8 @@
+/**
+ * @author GuangHui
+ * @description 用户相关路由
+ */
+
 import { Router } from 'express'
 import UserController from '../controllers/UserController'
 import { checkJwt } from '../middlewares/checkJwt'

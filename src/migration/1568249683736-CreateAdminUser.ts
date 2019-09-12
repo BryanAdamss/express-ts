@@ -1,3 +1,9 @@
+/**
+ * @author GuangHui
+ * @description Typeorm 迁移(线上创建admin用户用)
+ * 参考：https://typeorm.io/#/migrations
+ */
+
 import { MigrationInterface, QueryRunner, getRepository } from 'typeorm'
 import { User } from '../entity/User'
 

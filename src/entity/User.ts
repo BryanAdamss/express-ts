@@ -1,3 +1,8 @@
+/**
+ * @author GuangHui
+ * @description User模型
+ */
+
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -9,7 +14,7 @@ import {
 import { Length, IsNotEmpty } from 'class-validator'
 import * as bcrypt from 'bcryptjs'
 
-@Entity()
+@Entity() // 声明实体
 @Unique(['username'])
 export class User {
   @PrimaryGeneratedColumn() // 自增主键
