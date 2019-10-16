@@ -7,6 +7,17 @@
 2. npm start
 3. npm run migration:run
 4. 使用postman测试(注意post请求header设置Content-Type :application/json并且body选择raw，参考https://github.com/andregardi/jwt-express-typeorm/issues/3)
+5. 例如测试登录
+```
+// url
+post /auth/login
+  
+// post body(raw)
+{
+"username": "admin",
+"password": "admin"
+}
+```
 
 ## 参考
 - 项目：https://github.com/andregardi/jwt-express-typeorm?source=post_page-----fbfa3cab22a4----------------------
